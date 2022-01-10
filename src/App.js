@@ -1,64 +1,32 @@
 // import logo from './logo.svg';
-import "./App.css";
-
+import './App.css';
 //import bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 //import components
-import AppHeader from "./components/AppHeader";
-import Footer from "./components/Footer";
+import AppHeader from './components/AppHeader'
+import Footer from './components/Footer'
 
+import { Helmet } from "react-helmet";
 // import { Button } from 'react-bootstrap'
 
-//theme
-import {
-  createTheme,
-  MuiThemeProvider,
-  responsiveFontSizes,
-  ThemeProvider,
-  Typography,
-} from "@material-ui/core";
-
-let theme = createTheme({
-  pallette: {
-    background: "primary.main",
-  },
-  typography: {
-    fontFamily: "Josefin Sans",
-    fontWeightLight: 400,
-    fontWeightRegular: 500,
-    fontWeightMedium: 600,
-    fontWeightBold: 700,
-  },
-});
-
-theme = responsiveFontSizes(theme);
 
 function App() {
   return (
     <div className="App">
-      <MuiThemeProvider theme={theme}>
-        <AppHeader />
-        <div className="CoverImg">
-          <Typography variant="h3" style={{ fontWeight: "regular" }}>
-            Welcome to
-          </Typography>
-          <Typography variant="h1" style={{ fontWeight: "bolder" }}>
-            "Gendary!"
-          </Typography>
-        </div>
+      <Helmet bodyAttributes={{style: 'background-color : #212529'}}/>
+      <AppHeader />
+      <div className = "CoverImg addFont">
+        <h1 style={{fontSize: '50px'}}>Welcome to</h1>
+        <h1 style={{fontSize: '70px'}}>"Gendary!"</h1>
+      </div>
 
-        <div>
-          <Typography
-            variant="subtitle1"
-            style={{ background: "yellow", textAlign: "center" }}
-          >
-            This site is under redeveloped by react! {"\n"} Some Feature or page
-            might not working
-          </Typography>
-        </div>
-        <Footer />
-      </MuiThemeProvider>
+      {/* <div className="app-grid">
+      </div> */}
+      <div class='addFont' style={{textAlign: 'center', background: 'yellow', textJustify: 'center', alignItems: 'center'}}>
+        <p>This site is under redeveloped by react! {'\n'} Some Feature or page might not working</p>
+      </div>
+      <Footer />
     </div>
   );
 }
