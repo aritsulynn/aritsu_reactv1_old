@@ -13,7 +13,7 @@ import {
   createTheme,
   MuiThemeProvider,
   responsiveFontSizes,
-  ThemeProvider,
+  // ThemeProvider,
   Typography,
 } from "@material-ui/core";
 
