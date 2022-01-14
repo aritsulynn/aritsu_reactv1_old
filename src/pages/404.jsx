@@ -25,7 +25,7 @@ export default function NotFoundPage() {
           }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             style={{
               paddingTop: "10%",
               fontWeight: "bold",
