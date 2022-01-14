@@ -1,4 +1,4 @@
-function AppHeader() {
+export default function AppHeader() {
   return (
     <header className="app-header addFont bg-dark">
       <a
@@ -16,5 +16,3 @@ function AppHeader() {
     </header>
   );
 }
-
-export default AppHeader;

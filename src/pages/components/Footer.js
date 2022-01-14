@@ -1,14 +1,16 @@
+import { Typography } from "@material-ui/core";
 import "./Footer.css";
-function Footer() {
+
+export default function Footer() {
   return (
-    <footer
-      className="addFont"
-      style={{ textAlign: "center", marginTop: "20px", color: "white" }}
-    >
+    <footer className="addFont" style={{ textAlign: "center", color: "white" }}>
       <div className="container">
         <div className="row">
           <div className="container text-center">
-            <div className="row justify-content-center">
+            <div
+              className="row justify-content-center"
+              style={{ marginTop: "30px" }}
+            >
               {/* Facebook */}
               <div className="col-1">
                 <a
@@ -96,14 +98,16 @@ function Footer() {
           </div>
 
           <div className="col-12 text-center" style={{ marginTop: "10px" }}>
-            <p className="text-muted">
+            <Typography
+              className="text-muted"
+              style={{ color: "white" }}
+              variant="caption"
+            >
               &copy; Powered By Gendary 2021. All Rights Reserved.
-            </p>
+            </Typography>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;

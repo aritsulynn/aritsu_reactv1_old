@@ -1,11 +1,13 @@
-// import logo from './logo.svg';
-import "./App.css";
-//import bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
-
+// eslint-disable-next-line
+import React from "react";
 //import components
 import AppHeader from "./components/AppHeader";
 import Footer from "./components/Footer";
+
+// import logo from './logo.svg';
+import "./Index.css";
+//import bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import { Button } from 'react-bootstrap'
 
@@ -16,10 +18,11 @@ import {
   // ThemeProvider,
   Typography,
 } from "@material-ui/core";
+// Link
 
 let theme = createTheme({
   pallette: {
-    background: "primary.main",
+    background: "primary",
   },
   typography: {
     fontFamily: "Josefin Sans",
@@ -32,7 +35,7 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <MuiThemeProvider theme={theme}>
@@ -60,5 +63,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
