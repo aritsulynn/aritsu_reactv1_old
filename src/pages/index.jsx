@@ -29,7 +29,7 @@ let theme = createTheme({
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
-    fontWeightBold: 700,
+    fontWeightBold: 900,
   },
 });
 
@@ -41,10 +41,10 @@ export default function Home() {
       <MuiThemeProvider theme={theme}>
         <AppHeader />
         <div className="CoverImg">
-          <Typography variant="h3" style={{ fontWeight: "regular" }}>
+          <Typography variant="h3" style={{ fontWeight: "normal" }}>
             Welcome to
           </Typography>
-          <Typography variant="h1" style={{ fontWeight: "bolder" }}>
+          <Typography variant="h1" style={{ fontWeight: "bold" }}>
             "Gendary!"
           </Typography>
         </div>
@@ -52,7 +52,11 @@ export default function Home() {
         <div>
           <Typography
             variant="subtitle1"
-            style={{ background: "yellow", textAlign: "center" }}
+            style={{
+              background: "yellow",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
           >
             This site is under redeveloped by react! {"\n"} Some Feature or page
             might not working

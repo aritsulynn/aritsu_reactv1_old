@@ -9,6 +9,7 @@ export default function AppHeader() {
           textDecoration: "none",
           fontSize: "30px",
           marginTop: "5px",
+          fontWeight: "bold",
         }}
       >
         Gendary

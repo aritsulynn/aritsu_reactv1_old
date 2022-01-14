@@ -30,7 +30,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* position: relative;  */
+  position: relative;
   padding-top: 8rem;
   padding-bottom: 8rem;
   height: 100%;

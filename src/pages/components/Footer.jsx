@@ -103,8 +103,8 @@ export default function Footer() {
           <div className="col-12 text-center" style={{ marginTop: "10px" }}>
             <Typography
               className="text-muted"
-              style={{ color: "white" }}
-              variant="caption"
+              style={{ color: "white", fontWeight: "bold" }}
+              variant="subtitle"
             >
               &copy; Powered By Gendary 2021. All Rights Reserved.
             </Typography>
