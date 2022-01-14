@@ -3,7 +3,10 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="addFont" style={{ textAlign: "center", color: "white" }}>
+    <footer
+      className="addFont"
+      style={{ textAlign: "center", color: "white", marginTop: "0%" }}
+    >
       <div className="container">
         <div className="row">
           <div className="container text-center">

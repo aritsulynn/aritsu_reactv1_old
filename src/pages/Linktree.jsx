@@ -33,7 +33,7 @@ export default function Linktree() {
           <div class="d-grid gap-2 col-6 mx-auto">
             <a
               class="btn btn-outline-primary rounded-pill"
-              target="_blank"
+              rel="noopener"
               href="https://www.facebook.com/lynniswaifu"
               role="button"
             >
@@ -41,7 +41,7 @@ export default function Linktree() {
             </a>
             <a
               class="btn btn-outline-warning rounded-pill"
-              target="_blank"
+              rel="noopener"
               href="https://www.instagram.com/uandlynn/"
               role="button"
             >
@@ -49,7 +49,7 @@ export default function Linktree() {
             </a>
             <a
               class="btn btn-outline-info rounded-pill"
-              target="_blank"
+              rel="noopener"
               href="https://twitter.com/UandLynn"
               role="button"
             >
@@ -57,7 +57,7 @@ export default function Linktree() {
             </a>
             <a
               class="btn btn-outline-danger rounded-pill"
-              target="_blank"
+              rel="noopener"
               href="https://www.youtube.com/playlist?list=PL7l3hHPNck0brbtza0Nne2Qk8xO-PxTXe"
               role="button"
             >
@@ -65,7 +65,7 @@ export default function Linktree() {
             </a>
             <a
               class="btn btn-outline-light rounded-pill"
-              target="_blank"
+              rel="noopener"
               href="https://discord.gg/jZSSD4qtSk"
               role="button"
             >

@@ -10,10 +10,7 @@ export default function NotFoundPage() {
   return (
     <div>
       <AppHeader />
-      <div
-        style={{  textAlign: "center" }}
-        className="App CoverImg"
-      >
+      <div style={{ textAlign: "center" }} className="App CoverImg">
         <Typography
           variant="h1"
           style={{
@@ -26,7 +23,11 @@ export default function NotFoundPage() {
           Sorry, this page is not found!
         </Typography>
 
-        <Button variant="contained" size="medium" style={{backgroundColor: 'black'}}>
+        <Button
+          variant="contained"
+          size="medium"
+          style={{ backgroundColor: "black" }}
+        >
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             Home
           </Link>
