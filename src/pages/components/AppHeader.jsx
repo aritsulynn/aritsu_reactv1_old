@@ -19,11 +19,11 @@ export default function AppHeader() {
                       Linktree
                     </Nav.Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  {/* <NavDropdown.Item href="#action/3.2">
                     <Nav.Link href="/discord" style={{ color: "black" }}>
                       Discord
                     </Nav.Link>
-                  </NavDropdown.Item>
+                  </NavDropdown.Item> */}
                   <NavDropdown.Item href="#action/3.2">
                     <Nav.Link href="/Anime" style={{ color: "black" }}>
                       Anime
