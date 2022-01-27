@@ -11,7 +11,7 @@ export default function Linktree() {
       <div className="text-center" style={{ marginTop: "2%" }}>
         <img
           class="rounded-circle img-fluid"
-          src="https://i.imgur.com/tRjMnpS.jpg"
+          src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/272252268_432374282006432_1278985274575908197_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFwXUynpAagnu6mXwUL2tpwYo66jyelihFijrqPJ6WKEYD51TATPYNhJkfw5qjQEiZICeruSN7BByl5_9LJXXtj&_nc_ohc=_MepoY3cHgEAX8tLNN9&tn=u8bBuYC9ndmKmqfL&_nc_ht=scontent.fbkk17-1.fna&oh=00_AT8QU0y_B0vV1bRJjUAIkCrdRi8KCGHWxvRBl_cSt5JN0Q&oe=61F69598"
           alt=""
           width="200"
           height="150"
@@ -27,10 +27,13 @@ export default function Linktree() {
           fontWeight: "bolder",
         }}
       >
-        <Typography variant="h5">Thanawat Jarusuthirug</Typography>
-        <Typography variant="subtitle">
-          Welcome to Thanawat's Linktree
+        <Typography
+          variant="h5"
+          style={{ fontWeight: "bolder", fontFamily: "Josefin Sans" }}
+        >
+          Lynn.
         </Typography>
+        <Typography variant="subtitle2">Welcome to Lynn's Linktree</Typography>
       </div>
 
       <div>
@@ -66,7 +69,7 @@ export default function Linktree() {
             <a
               className="btn btn-outline-danger rounded-pill"
               rel="noopener"
-              href="https://www.youtube.com/playlist?list=PL7l3hHPNck0brbtza0Nne2Qk8xO-PxTXe"
+              href="https://www.youtube.com/playlist?list=PL7l3hHPNck0aN8epzCkfqAb1PCFCdmy83"
               role="button"
               style={{ fontWeight: "bolder" }}
             >
