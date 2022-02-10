@@ -11,34 +11,46 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // import { Button } from 'react-bootstrap'
 
+// import {
+//   createTheme,
+//   MuiThemeProvider,
+//   responsiveFontSizes,
+//   // ThemeProvider,
+//   Typography,
+// } from "@material-ui/core";
+// // Link
+
+// let theme = createTheme({
+//   pallette: {
+//     background: "primary",
+//   },
+//   typography: {
+//     fontFamily: "Josefin Sans",
+//     fontWeightLight: 400,
+//     fontWeightRegular: 500,
+//     fontWeightMedium: 600,
+//     fontWeightBold: 900,
+//   },
+// });
+
+import theme from "./components/Theme";
 import {
-  createTheme,
+  CssBaseline,
+  // createTheme,
   MuiThemeProvider,
   responsiveFontSizes,
-  // ThemeProvider,
   Typography,
+  Button,
+  Container,
 } from "@material-ui/core";
-// Link
 
-let theme = createTheme({
-  pallette: {
-    background: "primary",
-  },
-  typography: {
-    fontFamily: "Josefin Sans",
-    fontWeightLight: 400,
-    fontWeightRegular: 500,
-    fontWeightMedium: 600,
-    fontWeightBold: 900,
-  },
-});
-
-theme = responsiveFontSizes(theme);
+// theme = responsiveFontSizes(theme);
 
 export default function Home() {
   return (
     <div className="App">
       <MuiThemeProvider theme={theme}>
+        <CssBaseline />
         <AppHeader />
         <div className="CoverImg">
           <Typography variant="h3" style={{ fontWeight: "normal" }}>
@@ -49,7 +61,7 @@ export default function Home() {
           </Typography>
         </div>
 
-        <div>
+        {/* <div>
           <Typography
             variant="subtitle1"
             style={{
@@ -61,7 +73,7 @@ export default function Home() {
             This site is under redeveloped by react! {"\n"} Some Feature or page
             might not working
           </Typography>
-        </div>
+        </div> */}
         <Footer />
       </MuiThemeProvider>
     </div>

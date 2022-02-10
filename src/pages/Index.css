@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
-.App,
-html {
-  background-color: #212529;
-}
-
 .app-header {
   border-bottom: 1px solid black;
   justify-content: center;
@@ -38,14 +33,6 @@ html {
   align-items: center;
   text-align: center;
   color: white;
-  /* @media only screen and (max-width: 1200px) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-  @media (min-width: 600px) {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  } */
 }
 
 .addFont {
