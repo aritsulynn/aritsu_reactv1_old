@@ -22,7 +22,7 @@ export default function Linktree() {
         <div className="text-center" style={{ marginTop: "2%" }}>
           <img
             class="rounded-circle img-fluid"
-            src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/272401366_440738641169996_5244761586911076833_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFNxTM4ricd6nblRW6nJ1phr-sG_0oqogqv6wb_SiqiClSKyJyjJFahdCkoEKdcUex8gpW_KaV-g2LF9BnM_moZ&_nc_ohc=QJEsQcpZu0wAX91b--u&_nc_ht=scontent.fbkk17-1.fna&oh=00_AT-Ody_lf78pVFMs_MdyxncOEhUwQ3oP5z1jCcOJz-lLPQ&oe=620A3EF2"
+            src="https://i.imgur.com/QvuA6Lp.jpg"
             alt=""
             width="200"
             height="150"
