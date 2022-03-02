@@ -1,3 +1,4 @@
+// import "./Footer.css";
 import { Typography } from "@material-ui/core";
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
 
   return (
     <div className="Footer">
-      <footer style={{ textAlign: "center", color: "white", marginTop: "0%" }}>
+      <footer style={{ textAlign: "center", color: "white", paddingTop: "28px", alignItems:"center"}}>
         <div className="container">
           <div className="row">
             <div className="container text-center">
@@ -44,7 +45,7 @@ export default function Footer() {
                 </div>
 
                 {/* instagram */}
-                <div className="col-1 logo">
+                <div className="col-1">
                   <a
                     href="https://www.instagram.com/uandlynn/"
                     target="_blank"
@@ -67,7 +68,7 @@ export default function Footer() {
                 </div>
 
                 {/* Twitter */}
-                <div className="col-1 logo">
+                <div className="col-1">
                   <a
                     href="https://twitter.com/UandLynn"
                     target="_blank"
@@ -89,7 +90,7 @@ export default function Footer() {
                   </a>
                 </div>
                 {/* Discord */}
-                <div className="col-1 logo">
+                <div className="col-1">
                   <a
                     href="https://discord.gg/jZSSD4qtSk"
                     target="_blank"
@@ -114,7 +115,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-12 text-center" style={{ marginTop: "10px" }}>
+            <div className="col-12 text-center" style={{ marginTop: "10px", paddingTop:"10px" }}>
               <Typography
                 className="text-muted"
                 style={{ color: "white", fontWeight: "bold" }}
