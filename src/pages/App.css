@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
+html, body, #root {
+  height: 100%;
+}
 
 .app-header {
   border-bottom: 1px solid black;
@@ -11,16 +14,6 @@
   color: aliceblue;
 }
 
-/* .app-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 16px;
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
-} */
-
 .CoverImg {
   background-image: url("https://cutewallpaper.org/21/4k-anime-landscape-wallpaper/Anime-Girl-Sky-Clouds-Sunrise-Scenery-4K-Wallpaper-67.jpg");
   background-position: center;
@@ -30,15 +23,10 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
   height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
 }
 
-.addFont {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: "center";
-  text-justify: "center";
-  align-items: "center";
-}

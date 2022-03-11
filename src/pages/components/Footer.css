@@ -1,0 +1,12 @@
+a{
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+a :hover{
+    color: rgb(85, 84, 84);
+}
+
+i{
+    color: #ffff;
+}

@@ -1,15 +1,18 @@
 import { Button, Nav, NavDropdown, Container, Navbar } from "react-bootstrap";
-import { Typography } from "@material-ui/core";
+import { CssBaseline, MuiThemeProvider, Typography } from "@material-ui/core";
 import theme from "./Theme";
 
 export default function AppHeader() {
   return (
     <div className="AppHeader">
-      <Navbar expand="lg" variant="dark h5">
+      <MuiThemeProvider theme={theme}>
+        <CssBaseline/>
+        <Navbar expand="lg" variant="dark h5">
         <Container>
-          <Navbar.Brand href="/" style={{ fontWeight: "bold" }}>
-            GENDARY
+          <Navbar.Brand href="/" style={{height: "100%", width: "100%"}}>
+              <Typography variant="h5">GENDARY</Typography>
           </Navbar.Brand>
+          {/* <Typography varaint="h1">Gendary</Typography> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Container>
@@ -19,15 +22,13 @@ export default function AppHeader() {
                 <NavDropdown
                   title="Lynn's collections"
                   id="basic-nav-dropdown"
-                  bg="dark"
+                  bg="light"
                 >
                   <NavDropdown.Item href="/Linktree">
-                    Linktree
-                    <Typography></Typography>
+                    <Typography>Linktree</Typography>
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/Anime">
-                    AnimeList
-                    <Typography></Typography>
+                    <Typography>AnimeList</Typography>
                   </NavDropdown.Item>
                   {/* <NavDropdown.Item href="#action/3.3">
                     Something
@@ -42,6 +43,7 @@ export default function AppHeader() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </MuiThemeProvider>
     </div>
   );
 }

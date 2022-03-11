@@ -1,16 +1,12 @@
-import React from "react";
-import AppHeader from "./components/AppHeader";
-import Footer from "./components/Footer";
-import "./Index.css";
-import theme from "./components/Theme";
+
+import AppHeader from "../components/AppHeader";
+import Footer from "../components/Footer";
+import theme from "../components/Theme";
 
 import {
   CssBaseline,
   MuiThemeProvider,
-  responsiveFontSizes,
   Typography,
-  Button,
-  Container,
 } from "@material-ui/core";
 
 export default function Linktree() {

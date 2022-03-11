@@ -1,17 +1,14 @@
 import AppHeader from "./components/AppHeader";
 import Footer from "./components/Footer";
 import React from "react";
-import "./Index.css";
 import { Link } from "react-router-dom";
 import theme from "./components/Theme";
 
 import {
   CssBaseline,
   MuiThemeProvider,
-  responsiveFontSizes,
   Typography,
   Button,
-  Container,
 } from "@material-ui/core";
 
 export default function NotFoundPage() {
