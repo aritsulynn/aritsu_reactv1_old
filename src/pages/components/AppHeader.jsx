@@ -1,48 +1,40 @@
 import { Button, Nav, NavDropdown, Container, Navbar } from "react-bootstrap";
 import { CssBaseline, MuiThemeProvider, Typography } from "@material-ui/core";
 import theme from "./Theme";
+import { Offcanvas, Form, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 
 export default function AppHeader() {
   return (
     <div className="AppHeader">
       <MuiThemeProvider theme={theme}>
         <CssBaseline/>
-        <Navbar expand="lg" variant="dark h5">
-        <Container>
-          <Navbar.Brand href="/" style={{height: "100%", width: "100%"}}>
-              GENDARY
-          </Navbar.Brand>
-          {/* <Typography varaint="h1">Gendary</Typography> */}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Container>
-              <Nav className="me-auto justify-content-end">
-                <Nav.Link href="/">Home</Nav.Link>
-                {/* <Nav.Link href="#link">Link</Nav.Link> */}
-                <NavDropdown
-                  title="Lynn's collections"
-                  id="basic-nav-dropdown"
-                  bg="light"
-                >
-                  <NavDropdown.Item href="/Linktree">
-                    <Typography>Linktree</Typography>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/Anime">
-                    <Typography>AnimeList</Typography>
-                  </NavDropdown.Item>
-                  {/* <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                  </NavDropdown.Item> */}
-                </NavDropdown>
-              </Nav>
-            </Container>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+        <Navbar bg="#22222" expand={false}>
+          <Container fluid>
+            <Navbar.Brand href="/" style={{color : "white"}}>GENDARY</Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" style={{backgroundColor: "#4a4a4a"}}/>
+            <Navbar.Offcanvas
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+              placement="end"
+              style={{backgroundColor : "#222222"}}
+            >
+              <Offcanvas.Header closeButton >
+                <Offcanvas.Title id="offcanvasNavbarLabel">Gendary's Panel</Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body style={{ textDecoration:"None"}}>
+                <Nav className="justify-content-end flex-grow-1 pe-3" >
+                  <Nav.Link href="/" style={{color:"white"}}>Home</Nav.Link>
+                  <Nav.Link href="/Linktree" style={{color:"white"}}>Linktree</Nav.Link>
+                  <Nav.Link href="/Anime" style={{color:"white"}}>Anilist</Nav.Link>
+                  {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
+                    <NavDropdown.Item href="#action3">Anime</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                  </NavDropdown> */}
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
       </MuiThemeProvider>
     </div>
   );
