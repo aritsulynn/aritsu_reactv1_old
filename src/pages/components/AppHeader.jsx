@@ -10,7 +10,7 @@ export default function AppHeader() {
         <Navbar expand="lg" variant="dark h5">
         <Container>
           <Navbar.Brand href="/" style={{height: "100%", width: "100%"}}>
-              <Typography variant="h5">GENDARY</Typography>
+              GENDARY
           </Navbar.Brand>
           {/* <Typography varaint="h1">Gendary</Typography> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
