@@ -1,6 +1,5 @@
 import AppHeader from "./components/AppHeader";
 import Footer from "./components/Footer";
-import React from "react";
 import { Link } from "react-router-dom";
 import theme from "./components/Theme";
 

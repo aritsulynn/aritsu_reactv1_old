@@ -11,7 +11,7 @@ export default function AppHeader() {
         <Navbar bg="#22222" expand={false}>
           <Container fluid>
             <Navbar.Brand href="/" style={{color : "white"}}>GENDARY</Navbar.Brand>
-            <Navbar.Toggle aria-controls="offcanvasNavbar" style={{backgroundColor: "#4a4a4a"}}/>
+            {/* <Navbar.Toggle aria-controls="offcanvasNavbar" style={{backgroundColor: "#4a4a4a"}}/> */}
             <Navbar.Offcanvas
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
@@ -24,12 +24,8 @@ export default function AppHeader() {
               <Offcanvas.Body style={{ textDecoration:"None"}}>
                 <Nav className="justify-content-end flex-grow-1 pe-3" >
                   <Nav.Link href="/" style={{color:"white"}}>Home</Nav.Link>
-                  <Nav.Link href="/Linktree" style={{color:"white"}}>Linktree</Nav.Link>
-                  <Nav.Link href="/Anime" style={{color:"white"}}>Anilist</Nav.Link>
-                  {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
-                    <NavDropdown.Item href="#action3">Anime</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                  </NavDropdown> */}
+                  <Nav.Link href="#" style={{color:"white"}}>Linktree</Nav.Link>
+                  <Nav.Link href="#" style={{color:"white"}}>Anilist</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
